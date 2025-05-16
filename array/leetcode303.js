@@ -45,7 +45,7 @@ var NumArray = function (nums) {
 
   nums.forEach((ele, i) => {
     if (i === 0) {
-      this.prefixSum = [ele];
+      this.prefixSum[i] = ele;
     } else {
       this.prefixSum[i] = this.prefixSum[i - 1] + ele;
     }
